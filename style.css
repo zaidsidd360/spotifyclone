@@ -668,18 +668,22 @@ strong {
 
 footer {
 	background-color: black;
-	height: 530.4px;
+	height: auto;
+	padding-inline: 20px;
 }
 
 .fmain {
 	color: white;
-	margin: 0 163.8px;
 	padding-top: 80px;
 	display: flex;
+	justify-content: center;
+	max-width: 1168.4px;
+	margin-inline: auto;
 }
 
 .fmain > img {
 	padding-inline: 15px;
+	margin-top: 10px;
 }
 
 .fmaintext {
@@ -697,6 +701,12 @@ footer {
 	padding: 13px 0;
 	height: auto;
 	text-align: left;
+	overflow: hidden;
+}
+
+.green:hover {
+	color: #1ed760;
+	cursor: pointer;
 }
 
 .change {
@@ -706,11 +716,165 @@ footer {
 	margin-top: 20px;
 }
 
-.fmain div img {
-	background-color: white;
-	background-clip: text;
+.fmainlogos {
+	width: auto;
+	margin-left: auto;
+	margin-top: 20px;
 }
 
+.logosocial {
+	width: 54px;
+	height: 54px;
+	margin-right: 15px;
+}
 
+.logosocial:hover {
+	transform: rotate(360deg);
+	transition: all 400ms ease;
+}
 
+.legal {
+	color: #878787;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 1168.4px;
+	margin-inline: auto;
+	padding-bottom: 50px;
+}
 
+.legality {
+	list-style: none;
+	display: flex;
+	padding-left: 15px;
+}
+
+.legality li {
+	margin-right: 24px;
+	text-overflow: none;
+}
+
+.legality li:hover {
+	color: #1ed760;
+	cursor: pointer;
+}
+
+.pushtwo {
+	margin-left: auto;
+	margin-right: 15px;
+	list-style: none;
+}
+
+.pushtwo:hover {
+	cursor: pointer;
+	color: #1ed760;
+}
+
+.india {
+	display: flex;
+	justify-content: right;
+	max-width: 1168.4px;
+	margin-inline: auto;
+}
+
+.india p:hover {
+	cursor: pointer;
+	color: #1ed760;
+}
+
+.india p {
+	font-size: 12px;
+	color: #878787;
+	height: auto;
+}
+
+.fmain > img:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+	.fmain {
+		flex-direction: column;
+	}
+
+	.fmainlogos {
+		margin-left: 40px;
+	}
+
+	.logosocial {
+		width: 44px;
+		height: 44px;
+	}
+
+	.fmaintext {
+		padding-top: 50px;
+	}
+
+	footer {
+		padding-inline: 50px;
+	}
+
+	.fmain {
+		padding-top: 35px;
+	}
+
+	.fmain > img {
+		width: 89px;
+		height: 28.25px;
+		padding-left: 37px;
+	}
+
+	.legality {
+		padding-left: 45px;
+	}
+}
+
+@media (max-width: 706px) {
+	.fmaintext {
+		flex-direction: column;
+	}
+
+	.pad {
+		padding-inline: 0;
+	}
+
+	footer {
+		padding-inline: 25px;
+	}
+
+	.fmain > img {
+		padding-left: 0;
+	}
+
+	.fmainlogos {
+		margin-left: 0;
+		padding-top: 100px;
+	}
+
+	.pad {
+		margin-top: 40px;
+	}
+
+	.fmaintext {
+		padding-top: 0px;
+	}
+
+	.legality {
+		padding-left: 0px;
+		margin-right: 45px;
+		flex-wrap: wrap;
+	}
+
+	.legality li {
+		padding-top: 20px;
+	}
+
+	.pushtwo {
+		/* margin-left: 100px; */
+		flex-shrink: 0;
+		/* padding-right: 30px; */
+	}
+
+}
