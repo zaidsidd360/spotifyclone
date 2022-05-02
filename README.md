@@ -1,4 +1,4 @@
-# spotifyclone
+# spotify landing page clone
 A fully responsive Spotify(India) landing page clone built with HTML, CSS and vanilla JavaScript.
 
 https://www.spotify.com/in-en/free/ (The original)
